@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leik Lima-Eriksen - Resume
+% Created 1/4/2019
+% 
+% Based on the highly popular resume 
+% template made by Debarghya Das.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{resume-build}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Leik Lima-Eriksen}
+{images/profile_picture.png}
+{\urlstyle{same}
+	\faEnvelope \href{mailto:leik.lima-eriksen@lyse.net}{\hspace{0.5em}leik.lima-eriksen@lyse.net}\\
+	\faGithub \href{https://github.com/leiklier}{\hspace{0.5em}github.com/leiklier}\\
+	\faLinkedin \href{https://www.linkedin.com/in/leiklimaeriksen}{\hspace{0.5em}linkedin.com/in/leiklimaeriksen}
+}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.34\textwidth} 
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+
+\subsection{NTNU Gløshaugen}
+\descript{Autumn 2017 - present}
+\href{https://www.ntnu.no/studier/mtelsys}{MTech. in Electronics, 2. year} \\
+Graduating June 2022 \\
+Average grade: \emphasize{5.22} / 6 \\
+\sectionsep
+
+\subsection{St. Olav VGS, Stavanger}
+\descript{Autumn 2014 - Spring 2017}
+Programme subjects: IT 1 \& 2, Mathematics R1 \& R2, Physics 1 \& 2, and Chemistry 1 \\
+Average grade: \emphasize{5.44} / 6 \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming Languages:}
+Javascript ES6, Python 3, C++11, HTML, CSS, LaTeX, and some PHP
+\subsectionsep
+
+\subsection{Frameworks:}
+NodeJS, React, Ant Design, Redux, ExpressJS, Chart.js, and Apache
+\subsectionsep
+
+\subsection{Database Systems:}
+MongoDB, and MySQL
+\subsectionsep
+
+\subsection{Tools:}
+Git, vim, SSH, tmux, and Altium 19
+\sectionsep
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+\subsectionsep
+\begin{tightemize}
+\item Procedural- and object oriented programming (C++)
+\item Information Technology (Python)
+\item Statistics
+\item Calculus 1 \&  2
+\item Complex Calculus (Mathematics 4K)
+\item Linear algebra
+\item Electrical circuits and digital design
+\item Computers and digital design
+\end{tightemize}
+\sectionsep
+
+\DTMsetdatestyle{mylastupdate}
+Last updated \DTMdisplaydate{\the\year}{\the\month}{\the\day}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ADDITIONAL INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Recreational activities}
+
+\activity{Orbit NTNU}{Jan 2019 - present}\\
+\position{Satellite Communications Engineer}{ }
+\sectionsep
+\begin{tightemize}
+    \item Configuring the ground station responsible for the communication with a cube satellite developed by students.
+\end{tightemize}
+
+\activity{Omega Verksted NTNU}{Feb 2019 - present}\\
+%\position{Member}{ }
+\begin{tightemize}
+    \item A lot of geeking, which includes PCB design and microcontroller programming.
+\end{tightemize}
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work experience}
+
+\workplace{Volunteering work for Follow Me}{2013 – 2017}\\
+\position{Sound engineer}{Stavanger, Rogaland}
+\begin{tightemize}
+\item Responsible for rigging up and down sound- and light equipments for multiple small concerts in Stavanger.
+\item Mixed sound at the above events and have been responsible for audio recording.
+\end{tightemize}
+\sectionsep
+
+\workplace{Part-time job in an amusement park}{Apr – Jul 2016} \\
+\position{Responsible for the attractions}{Ålgård, Rogaland}
+\begin{tightemize}
+\item Informed the guest on how they should behave in the attractions, and was responsible for controlling these.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\project{Website for IoT devices}{leiklier/smartwater-website}\\
+\descript{}
+A web application which visualizes data sent from sensor nodes through both line diagrams and tables. Receives data in real-time via WebSockets. \emphasize{React} application with \emphasize{Redux}, \emphasize{Ant Design}, and \emphasize{Chart.js}.
+\subsectionsep
+
+\project{API for IoT devices}{leiklier/smartwater-api}\\
+\location{Chosen to be used by 7 out of 8 groups participating in the subject}
+\descript{}
+RESTful CRUDL-type HTTP-exposed API which stores data sent from The Things Network in a database for later retrieveal. Real-time updates through WebSockets. Has successfully received and stored 170 000 measurements without ever crashing. Build with \emphasize{ExpressJS}, \emphasize{MongoDB}, and \emphasize{Websockets}.
+\subsectionsep 
+
+\project{PCB design of an IoT device}{leiklier/smartwater-pcb}\\
+\descript{}
+Designed the PCB for an IoT device which measures diverse parameters and transfers these over LoRaWAN. The system is self-supplied with energy through a solar panel and rechargeable batteries. Design done in \emphasize{Altium 19}.
+\subsectionsep
+
+
+\end{minipage} 
+
+\end{document}  
