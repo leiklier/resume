@@ -7,3 +7,5 @@ Resume based on the highly popular resume template made by Debarghya Das. This r
 ### Prerequisities
 This template is built with XeLaTeX.
 
+## Screenshot
+![Screenshot of resume](./screenshot.png)
